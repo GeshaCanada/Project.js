@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f0f0f0;
+            /* Stainless steel grey */
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: red;
+            /* Red color for table head */
+            color: whitesmoke;
+            /* White text color for table head */
+        }
+
+        tr:hover {
+            background-color: #c0c0c0;
+            /* Light grey on hover */
+        }
+
+        .icon {
+    font-size: 20px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Adding transition */
+}
+
+.icon:hover {
+    transform: scale(1.5); /* Increasing size on hover */
+}
+    </style>
+</head>
+
+<body>
+
+    <h2>Dynamic Table</h2>
+
+    <table id="dynamicTable">
+        <tr class="day">
+            <th>Event</th>
+            <th>Topic</th>
+            <th>Presentation</th>
+            <th>Video</th>
+        </tr>
+        <tr class="event">
+            <td rowspan="3" style="background-color:#c0c0c0; color:red">Day 1</td>
+            <td class="topic">OE - Wireless Overview</td>
+            <td class="presentation"><a
+                    href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/_layouts/15/Doc.aspx?sourcedoc=%7B472BD2D5-9277-4C13-8975-D7EB24707C2D%7D&file=QE%20-%20Wireless%20Overiew%20-%202023.pptx&action=edit&mobileredirect=true">
+                    <span class="icon">📖</span>
+                </a></td>
+            <td class="video"><a
+                    href="https://rcirogers-my.sharepoint.com/personal/kanth_gullapalli1_rci_rogers_ca/_layouts/15/stream.aspx?id=%2Fpersonal%2Fkanth%5Fgullapalli1%5Frci%5Frogers%5Fca%2FDocuments%2FRecordings%2FWireless%20Overview%20%2D%20KT%20Session%2DI%2D20231120%5F110140%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview&ga=1">
+                    <span class="icon">🎥</span>
+        </tr></a></td>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr class="day">
+            <td rowspan="4" style="background-color: #c0c0c0; color:red">Day 2</td>
+            <td class="topic">Presentation 1</td>
+            <td class="presentation"></td>
+            <td><a href="video_link_presentation_1">Video 1</a></td>
+        </tr>
+        <tr class="event">
+            <td class="topic">Presentation 2</td>
+            <td class="presentation"></td>
+            <td><a href="video_link_presentation_2_day2">Video 2 (Day 2)</a></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+
+    </table>
+
+    <script>
+        // JavaScript code to highlight all rows when hovering over the table
+        const rows = document.querySelectorAll("tr");
+
+        rows.forEach(row => {
+            row.addEventListener("mouseover", function () {
+                this.style.backgroundColor = "#c0c0c0"; // Light grey on hover
+            });
+            row.addEventListener("mouseout", function () {
+                this.style.backgroundColor = ""; // Remove background color on mouseout
+            });
+        });
+    </script>
+
+</body>
+
+</html>
