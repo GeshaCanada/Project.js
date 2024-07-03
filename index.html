@@ -5,98 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KT Training Sessions - December 2023</title>
+
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #f0f0f0;
-            /* Stainless steel grey */
+        .logo-container {
+            margin-left: 25px; 
         }
 
+        table {
+            width: calc(100% - 60px); /* Reduce table width by 40px */
+            margin: 0 auto; /* Center the table horizontally */
+            border-collapse: collapse;
+            background-color: #f0f0f0; /* Stainless steel grey */
+            table-layout: fixed; /* Set table layout to fixed */
+        }
+ 
         th,
         td {
             border: 1px solid #dddddd;
-            text-align: center;
-            /* Center align text in all cells */
+            text-align: center; /* Center align text in all cells */
             padding: 8px;
         }
-
+ 
         th {
-            background-color: rgb(186, 17, 17);
-            /* Red color for table head */
-            color: whitesmoke;
-            /* White text color for table head */
+            background-color: rgb(186, 17, 17); /* Red color for table head */
+            color: whitesmoke; /* White text color for table head */
         }
-
+ 
         tr:hover {
-            background-color: #c0c0c0;
-            /* Light grey on hover */
+            background-color: #c0c0c0; /* Light grey on hover */
         }
-
+ 
         .icon {
-            font-size: 20px;
-            margin-right: 5px;
+            font-size: 14px;
+            margin-right: 50px;
             display: flex;
             justify-content: center;
-            transition: transform 0.3s ease;
-            /* Adding transition */
+            transition: transform 0.3s ease; /* Adding transition */
         }
-
+ 
         .icon:hover {
-            transform: scale(1.5);
-            /* Increasing size on hover */
+            transform: scale(1.5); /* Increasing size on hover */
         }
-
+ 
         .faces {
             display: flex;
             align-items: center;
             position: absolute;
-            top: 60px;
-            /* Adjust the top value as needed */
-            right: 10px;
-            /* Adjust the right value as needed */
+            top: 60px; /* Adjust the top value as needed */
+            right: 10px; /* Adjust the right value as needed */
         }
-
+ 
         .face {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            margin-right: 75px;
-            /* Spacing between faces */
+            margin-right: 75px; /* Spacing between faces */
             cursor: pointer;
             position: relative;
             background-size: cover;
             background-position: center;
         }
-
+ 
         .face::before {
             content: attr(data-name);
             position: absolute;
-            top: 60px;
-            /* Adjust the top value as needed */
+            top: 60px; /* Adjust the top value as needed */
             left: 50%;
             transform: translateX(-50%);
             padding: 5px;
-            background-color: lightgray;
-            /* Grey background */
-            color: black;
-            /* Text color */
+            background-color: lightgray; /* Grey background */
+            color: black; /* Text color */
             border-radius: 5px;
             z-index: 999;
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
-            white-space: nowrap;
-            /* Prevent text from wrapping */
+            white-space: nowrap; /* Prevent text from wrapping */
         }
-
+ 
         .face:hover::before {
             opacity: 1;
         }
-
+ 
         /* Increase size of table header text */
         th {
-            font-size: 1.2em;
-            /* Adjust font size as needed */
+            font-size: 1.2em; /* Adjust font size as needed */
+        }
+ 
+        /* Set equal width for each column */
+        th, td {
+            width: calc(25% - 2px); /* Adjust width as needed */
         }
     </style>
 </head>
@@ -104,7 +101,11 @@
 <body>
 
     <header style="display: flex; justify-content: space-between;">
-        <div>
+        <!-- <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjb-bzdq91TvlWYTUnBlH6PTxhR1vfzj4FRQ&s">
+        </div> -->
+        
+        <div class="logo-container">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjb-bzdq91TvlWYTUnBlH6PTxhR1vfzj4FRQ&s">
         </div>
 
@@ -185,9 +186,9 @@
         <!-- Day 4 -->
         <tr class="event">
             <td class="day"><a
-                    href="https://rcirogers.sharepoint.com/teams/ITS-TestCenExc/Quality%20Assurance/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1713267441275&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yNDAyMjkyMDYwMiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FITS%2DTestCenExc%2FQuality%20Assurance%2F07%20%2D%20Administration%2FManagers%2F%5FOleg%2FTrainings%2FDecember%5F2023%2FDay%203%5FMPS&viewid=44386962%2D9bb8%2D4c4e%2D8b39%2Da3c1725b7402">
+                    href="https://rcirogers.sharepoint.com/teams/ITS-TestCenExc/Quality%20Assurance/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1713267441275&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yNDAyMjkyMDYwMiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FITS%2DTestCenExc%2FQuality%20Assurance%2F07%20%2D%20Administration%2FManagers%2F%5FOleg%2FTrainings%2FDecember%5F2023%2FDay%204%5FBilling&viewid=44386962%2D9bb8%2D4c4e%2D8b39%2Da3c1725b7402">
                     <span class="icon">📅 Day 4</span></td>
-            <td class="topic"><span class="icon">Billing</span></td>
+            <td class="topic"><span class="icon">Billing & Invoicing</span></td>
             <td class="presentation"><a
                     href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/_layouts/15/Doc.aspx?sourcedoc=%7B77F2A41A-E70A-4286-92AA-72C4BB5BAB31%7D&file=CBU%20Wireless%20QE_Billing%20-%20KT.pptx&wdLOR=c5A9CB435-8AF7-420A-9CD5-D7672172C6ED&action=edit&mobileredirect=true">
                     <span class="icon">📖</span></a></td>
@@ -282,6 +283,91 @@
                     href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/Quality%20Assurance/07%20-%20Administration/Managers/_Oleg/Trainings/December_2023/Day%209%20-%20CDK_Browse/CBU%20Wireless%20QE_CDK%20Digital%20-%20KT.pptx?d=wcf73c016a89e470aae21643490851c76&csf=1&web=1&e=ed0jg1"><span
                         class="icon">📖</span></a></td>
         </tr>
+
+
+
+<!-- Day 10 -->
+<tr class="event">
+    <td class="day" rowspan="4">
+        <a
+            href="https://rcirogers.sharepoint.com/teams/ITS-TestCenExc/Quality%20Assurance/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1713267441275&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yNDAyMjkyMDYwMiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FITS%2DTestCenExc%2FQuality%20Assurance%2F07%20%2D%20Administration%2FManagers%2F%5FOleg%2FTrainings%2FDecember%5F2023%2FDay%2010%20%2D%20Digital%20Customer%20Account%20Management&viewid=44386962%2D9bb8%2D4c4e%2D8b39%2Da3c1725b7402">
+            <span class="icon">📅 Day 10</span>
+        </a>
+    </td>
+    <td class="topic"><span class="icon"> Digital CAM Overview</span></td>
+    <td class="presentation"><a
+            href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/Quality%20Assurance/07%20-%20Administration/Managers/_Oleg/Trainings/December_2023/Day%2010%20-%20Digital%20Customer%20Account%20Management/CBU%20Wireless%20QE_Digital%20CAM-Account%20Overview%20%26%20Dashboard.pptx?d=w2660372212dd4c6e979f9f25923ba0d1&csf=1&web=1&e=yO9AMA"><span
+                class="icon">📖</span></a></td>
+    <td class="video" rowspan="4"><a
+            href="https://rcirogers-my.sharepoint.com/personal/kanth_gullapalli1_rci_rogers_ca/_layouts/15/stream.aspx?id=%2Fpersonal%2Fkanth%5Fgullapalli1%5Frci%5Frogers%5Fca%2FDocuments%2FRecordings%2FWireless%20Overview%20%2D%20KT%20Session%2DX%2D20231205%5F110120%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview&ga=1 "><span
+                class="icon">🎥</span></a></td>
+</tr>
+<tr class="event">
+    <td class="topic"><span class="icon"> Digital CAM B&P</span></td>
+    <td class="presentation"><a
+            href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/Quality%20Assurance/07%20-%20Administration/Managers/_Oleg/Trainings/December_2023/Day%2010%20-%20Digital%20Customer%20Account%20Management/CBU%20Wireless%20QE_Digital%20CAM-B%26P.pptm?d=w670ff9db52494a539868136d56852859&csf=1&web=1&e=c9oLvg"><span
+                class="icon">📖</span></a></td>
+</tr>
+
+<tr class="event">
+    <td class="topic"><span class="icon"> Digital Titans_Cam profile & settings</span></td>
+    <td class="presentation"><a
+            href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/_layouts/15/Doc.aspx?sourcedoc=%7B37380C4E-A304-44BC-B95B-E634415E913B%7D&file=CBU%20Wireless%20QE_Digital_Titans%20KT.pptx&action=edit&mobileredirect=true"><span
+                class="icon">📖</span></a></td>
+</tr>
+
+
+<tr class="event">
+    <td class="topic"><span class="icon"> Attach</span></td>
+    <td class="presentation"><a
+            href="https://rcirogers.sharepoint.com/:u:/r/teams/ITS-TestCenExc/Quality%20Assurance/07%20-%20Administration/Managers/_Oleg/Trainings/December_2023/Day%2010%20-%20Digital%20Customer%20Account%20Management/Digital%20CAM-Account%20Overview.zip?csf=1&web=1&e=iZK5rT"><span
+                class="icon">📖</span></a></td>
+</tr>
+
+
+
+
+      <!-- Day 11 -->
+      <tr class="event">
+        <td class="day" rowspan="2">
+            <a
+                href="https://rcirogers.sharepoint.com/teams/ITS-TestCenExc/Quality%20Assurance/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1713267441275&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yNDAyMjkyMDYwMiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FITS%2DTestCenExc%2FQuality%20Assurance%2F07%20%2D%20Administration%2FManagers%2F%5FOleg%2FTrainings%2FDecember%5F2023%2FDay%2011%20%2D%20Chatr&viewid=44386962%2D9bb8%2D4c4e%2D8b39%2Da3c1725b7402">
+                <span class="icon">📅 Day 11</span>
+            </a>
+        </td>
+        <td class="topic"><span class="icon">Chatr CWP Legacy</span></td>
+        <td class="presentation"><a
+                href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/Quality%20Assurance/07%20-%20Administration/Managers/_Oleg/Trainings/December_2023/Day%2011%20-%20Chatr/CBU%20Wireless%20QE_Chatr-CWP%20Legacy%20-%20KT.pptx?d=wb624d25daba14935a74f63cadb1fb2a6&csf=1&web=1&e=Z9daSd"><span
+                    class="icon">📖</span></a></td>
+        <td class="video" rowspan="2"><a
+                href="https://rcirogers-my.sharepoint.com/personal/kanth_gullapalli1_rci_rogers_ca/_layouts/15/stream.aspx?id=%2Fpersonal%2Fkanth%5Fgullapalli1%5Frci%5Frogers%5Fca%2FDocuments%2FRecordings%2FWireless%20Overview%20%2D%20KT%20Session%2DXI%2D20231206%5F103248%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview&ga=1 "><span
+                    class="icon">🎥</span></a></td>
+    </tr>
+    <tr class="event">
+        <td class="topic"><span class="icon">CPP New Chatr</span></td>
+        <td class="presentation"><a
+                href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/Quality%20Assurance/07%20-%20Administration/Managers/_Oleg/Trainings/December_2023/Day%2011%20-%20Chatr/CBU%20Wireless%20QE_CPP-New%20Chatr%20-%20KT.pptx?d=w4a3e155408954d3aabb15f9d0c27bc09&csf=1&web=1&e=TmPJYj"><span
+                    class="icon">📖</span></a></td>
+    </tr>
+
+<!-- Day 12 -->
+<tr class="event">
+    <td class="day"><a
+            href="https://rcirogers.sharepoint.com/teams/ITS-TestCenExc/Quality%20Assurance/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1713267441275&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yNDAyMjkyMDYwMiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fteams%2FITS%2DTestCenExc%2FQuality%20Assurance%2F07%20%2D%20Administration%2FManagers%2F%5FOleg%2FTrainings%2FDecember%5F2023%2FDay%2012%20%2D%20RTRM&viewid=44386962%2D9bb8%2D4c4e%2D8b39%2Da3c1725b7402">
+            <span class="icon">📅 Day 12</span></td>
+    <td class="topic"><span class="icon">RTRM</span></td>
+    <td class="presentation"><a
+            href="https://rcirogers.sharepoint.com/:p:/r/teams/ITS-TestCenExc/Quality%20Assurance/07%20-%20Administration/Managers/_Oleg/Trainings/December_2023/Day%2012%20-%20RTRM/CBU%20Wireless%20QE_RTRM%20-%20KT.pptx?d=wb8065e374c7f4d8fa4ad5e15c44ed68c&csf=1&web=1&e=PO8tuO">
+            <span class="icon">📖</span></a></td>
+    <td class="video"><a
+            href="https://rcirogers-my.sharepoint.com/:v:/g/personal/kanth_gullapalli1_rci_rogers_ca/EQyqyKZN3StHq6135DPITMAB5EIVVI1mBqK-Rdf8pJil9A?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view.view">
+            <span class="icon">🎥</span></a></td>
+</tr>
+
+
+
+
+
 
 
     </table>
